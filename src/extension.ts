@@ -31,7 +31,7 @@ export function activate(context: vscode.ExtensionContext) {
   })
 
   vscode.workspace.onDidChangeConfiguration(event => {
-    if (event.affectsConfiguration('pureVueDX.globalComponents')) {
+    if (event.affectsConfiguration('vue.globalComponents')) {
       onConfigChange()
     }
 	})
@@ -44,7 +44,7 @@ export function deactivate(context: vscode.ExtensionContext) {
 }
 
 function onConfigChange() {
-  const config = vscode.workspace.getConfiguration('pureVueDX.globalComponents')
+  const config = vscode.workspace.getConfiguration('vue.globalComponents')
 
   reloadGlobalComponents(
     String(config.source),

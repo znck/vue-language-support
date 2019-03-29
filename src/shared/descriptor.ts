@@ -1,10 +1,7 @@
 import { parse as parseSFC, SFCBlock } from '@vue/component-compiler-utils'
 // TODO: Check if it can depend on a fixed version of template compiler.
 import * as compiler from 'vue-template-compiler'
-import * as Path from 'path'
 import { Prop, getProps } from './babel/props'
-import { getTransparentTargetTag } from './template/tag'
-import { parse as parseTemplate } from './template/parse'
 import { parse as parseBabel } from './babel/parse'
 import CustomError, { ErrorCode } from './errors'
 import { getComponentOptions } from './babel/options'

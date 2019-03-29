@@ -1,34 +1,40 @@
 {
-  "name": "pure-vue-dx",
-  "displayName": "Pure Vue DX",
+  "name": "vue-language-support",
+  "displayName": "Vue Language Support",
   "description": "Improving developer experience in .vue files",
-  "version": "0.0.0-alpha.0",
+  "version": "0.0.0",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.32.0"
   },
   "categories": [
-    "Other"
+    "Programming Languages"
   ],
   "activationEvents": [
     "onLanguage:vue",
     "onLanguage:vue-html"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/znck/vue-language-support"
+  },
   "publisher": "znck",
+  "icon": "logo.png",
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
       "properties": {
-        "pureVueDX.globalComponents.source": {
+        "vue.globalComponents.source": {
           "description": "Global components directory",
           "type": "string",
           "default": "src/components"
         },
-        "pureVueDX.globalComponents.recursive": {
+        "vue.globalComponents.recursive": {
           "description": "Search global components recursively",
           "type": "boolean",
           "default": false
         },
-        "pureVueDX.globalComponents.filter": {
+        "vue.globalComponents.filter": {
           "description": "Filter components",
           "type": "string",
           "default": "_?(app|base|App|Base)[^.]+\\.vue$"
@@ -54,16 +60,15 @@
     "@types/node": "^10.12.21",
     "tslint": "^5.12.1",
     "typescript": "^3.3.1",
-    "vscode": "^1.1.28"
+    "vscode": "^1.1.28",
+    "vue": "^2.6.10"
   },
   "dependencies": {
     "@babel/core": "^7.4.0",
     "@babel/traverse": "^7.4.0",
     "@types/jest": "^24.0.6",
     "@vue/component-compiler-utils": "^2.6.0",
-    "@vue/experimental-template-parser": "link:../../OpenSource/vuejs/vue-next-compiler-prototype",
     "fs-extra": "^7.0.1",
-    "glob": "^7.1.3",
     "jest": "^24.5.0",
     "lodash": "^4.17.11",
     "ts-jest": "^24.0.0",
