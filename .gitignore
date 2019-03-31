@@ -2,3 +2,8 @@ out
 node_modules
 .vscode-test/
 *.vsix
+dist/
+yarn.lock
+package-lock.json
+.rpt2_cache/
+old/

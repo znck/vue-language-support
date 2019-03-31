@@ -1,0 +1,21 @@
+{
+  "name": "@znck/vue-language-server",
+  "version": "0.0.0",
+  "description": "Language Server Implementation for Vue",
+  "main": "dist/server.js",
+  "tsMain": "src/index.ts",
+  "files": [
+    "dist/"
+  ],
+  "author": "Rahul Kadyan <rahulkdn@gmail.com> (https://znck.me)",
+  "license": "MIT",
+  "dependencies": {
+    "@znck/vue-docgen": "link:../vue-docgen",
+    "lodash": "^4.17.11",
+    "vscode-jsonrpc": "^4.0.0",
+    "vscode-languageserver": "^5.3.0-next.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.4.1"
+  }
+}

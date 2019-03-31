@@ -1,0 +1,64 @@
+{
+  "name": "vue-language-support",
+  "displayName": "Vue Language Support",
+  "description": "Improving developer experience in .vue files",
+  "version": "0.0.0",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:vue"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/znck/vue-language-support"
+  },
+  "publisher": "znck",
+  "icon": "logo.png",
+  "main": "./dist/extension.js",
+  "tsMain": "./src/extension.ts",
+  "contributes": {
+    "configuration": {
+      "properties": {
+        "vueLanguage.globalComponents.directory": {
+          "description": "Global components directory",
+          "type": "string",
+          "default": "src/components"
+        },
+        "vueLanguage.globalComponents.useSubdirectories": {
+          "description": "Search global components in subdirectories",
+          "type": "boolean",
+          "default": false
+        },
+        "vueLanguage.globalComponents.regExp": {
+          "description": "Regular expression to filter components",
+          "type": "string",
+          "default": "_?(app|base|App|Base)[^.]+\\.vue$"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "update-vscode": "vscode-install",
+    "postinstall": "vscode-install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "vscode": "^1.1.33"
+  },
+  "dependencies": {
+    "@znck/vue-language-server": "link:../../packages/vue-language-server",
+    "vscode-languageclient": "^5.2.1"
+  },
+  "prettier": {
+    "semi": false,
+    "trailingComma": "es5",
+    "singleQuote": true
+  }
+}
