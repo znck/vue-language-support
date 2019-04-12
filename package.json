@@ -2,15 +2,19 @@
   "private": true,
   "scripts": {
     "build": "rollup -c -m",
-    "watch": "rollup -c -m --watch"
+    "watch": "rollup -c -m --watch",
+    "test": "jest"
   },
   "devDependencies": {
-    "@types/node": "^11.12.2",
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.0",
+    "jest": "^24.7.1",
     "rollup": "^1.7.4",
     "rollup-plugin-commonjs": "^9.2.2",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^4.0.1",
     "rollup-plugin-typescript2": "^0.20.1",
+    "ts-jest": "^24.0.1",
     "tslint": "^5.12.1",
     "typescript": "^3.4.1"
   },

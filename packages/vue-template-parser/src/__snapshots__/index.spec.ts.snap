@@ -1,0 +1,2499 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parse should parse directives 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "attributes": Array [
+        Object {
+          "argument": Object {
+            "argument": undefined,
+            "isExpression": false,
+            "range": Object {
+              "end": Object {
+                "character": 20,
+                "line": 2,
+              },
+              "start": Object {
+                "character": 15,
+                "line": 2,
+              },
+            },
+            "type": "DirectiveArgument",
+            "value": "start",
+          },
+          "expression": Object {
+            "quotes": "\\"",
+            "range": Object {
+              "end": Object {
+                "character": 0,
+                "line": 3,
+              },
+              "start": Object {
+                "character": 29,
+                "line": 2,
+              },
+            },
+            "type": "DirectiveExpression",
+            "value": "onStart",
+          },
+          "handler": Node {
+            "comments": Array [],
+            "end": 7,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 7,
+                "line": 1,
+              },
+              "identifierName": "onStart",
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "name": "onStart",
+            "start": 0,
+            "type": "Identifier",
+          },
+          "isShorthand": false,
+          "modifiers": Array [
+            Object {
+              "name": "delayed",
+              "range": Object {
+                "end": Object {
+                  "character": 28,
+                  "line": 2,
+                },
+                "start": Object {
+                  "character": 21,
+                  "line": 2,
+                },
+              },
+              "type": "DirectiveModifier",
+            },
+          ],
+          "name": "on",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 3,
+            },
+            "start": Object {
+              "character": 10,
+              "line": 2,
+            },
+          },
+          "type": "Directive",
+        },
+        Object {
+          "argument": Object {
+            "argument": undefined,
+            "isExpression": false,
+            "range": Object {
+              "end": Object {
+                "character": 22,
+                "line": 4,
+              },
+              "start": Object {
+                "character": 17,
+                "line": 4,
+              },
+            },
+            "type": "DirectiveArgument",
+            "value": "delay",
+          },
+          "expression": Object {
+            "quotes": "\\"",
+            "range": Object {
+              "end": Object {
+                "character": 0,
+                "line": 5,
+              },
+              "start": Object {
+                "character": 23,
+                "line": 4,
+              },
+            },
+            "type": "DirectiveExpression",
+            "value": "20",
+          },
+          "isShorthand": false,
+          "modifiers": Array [],
+          "name": "bind",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 5,
+            },
+            "start": Object {
+              "character": 10,
+              "line": 4,
+            },
+          },
+          "type": "Directive",
+          "value": Node {
+            "comments": Array [],
+            "end": 2,
+            "extra": Object {
+              "raw": "20",
+              "rawValue": 20,
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 2,
+                "line": 1,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "start": 0,
+            "type": "NumericLiteral",
+            "value": 20,
+          },
+        },
+        Object {
+          "argument": Object {
+            "argument": undefined,
+            "isExpression": false,
+            "range": Object {
+              "end": Object {
+                "character": 14,
+                "line": 6,
+              },
+              "start": Object {
+                "character": 11,
+                "line": 6,
+              },
+            },
+            "type": "DirectiveArgument",
+            "value": "url",
+          },
+          "expression": Object {
+            "quotes": "\\"",
+            "range": Object {
+              "end": Object {
+                "character": 0,
+                "line": 7,
+              },
+              "start": Object {
+                "character": 15,
+                "line": 6,
+              },
+            },
+            "type": "DirectiveExpression",
+            "value": "'//example.com'",
+          },
+          "isShorthand": true,
+          "modifiers": Array [],
+          "name": "bind",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 7,
+            },
+            "start": Object {
+              "character": 10,
+              "line": 6,
+            },
+          },
+          "type": "Directive",
+          "value": Node {
+            "comments": Array [],
+            "end": 15,
+            "extra": Object {
+              "raw": "'//example.com'",
+              "rawValue": "//example.com",
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 15,
+                "line": 1,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "start": 0,
+            "type": "StringLiteral",
+            "value": "//example.com",
+          },
+        },
+        Object {
+          "argument": Object {
+            "argument": undefined,
+            "isExpression": false,
+            "range": Object {
+              "end": Object {
+                "character": 14,
+                "line": 8,
+              },
+              "start": Object {
+                "character": 11,
+                "line": 8,
+              },
+            },
+            "type": "DirectiveArgument",
+            "value": "end",
+          },
+          "expression": Object {
+            "quotes": "\\"",
+            "range": Object {
+              "end": Object {
+                "character": 54,
+                "line": 8,
+              },
+              "start": Object {
+                "character": 39,
+                "line": 8,
+              },
+            },
+            "type": "DirectiveExpression",
+            "value": "done = $event",
+          },
+          "handler": Node {
+            "comments": Array [],
+            "end": 13,
+            "left": Node {
+              "end": 4,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 4,
+                  "line": 1,
+                },
+                "identifierName": "done",
+                "start": Position {
+                  "column": 0,
+                  "line": 1,
+                },
+              },
+              "name": "done",
+              "start": 0,
+              "type": "Identifier",
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 13,
+                "line": 1,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 1,
+              },
+            },
+            "operator": "=",
+            "right": Node {
+              "end": 13,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 13,
+                  "line": 1,
+                },
+                "identifierName": "$event",
+                "start": Position {
+                  "column": 7,
+                  "line": 1,
+                },
+              },
+              "name": "$event",
+              "start": 7,
+              "type": "Identifier",
+            },
+            "start": 0,
+            "type": "AssignmentExpression",
+          },
+          "isShorthand": true,
+          "modifiers": Array [
+            Object {
+              "name": "immediate",
+              "range": Object {
+                "end": Object {
+                  "character": 24,
+                  "line": 8,
+                },
+                "start": Object {
+                  "character": 15,
+                  "line": 8,
+                },
+              },
+              "type": "DirectiveModifier",
+            },
+            Object {
+              "name": "force",
+              "range": Object {
+                "end": Object {
+                  "character": 30,
+                  "line": 8,
+                },
+                "start": Object {
+                  "character": 25,
+                  "line": 8,
+                },
+              },
+              "type": "DirectiveModifier",
+            },
+            Object {
+              "name": "example",
+              "range": Object {
+                "end": Object {
+                  "character": 38,
+                  "line": 8,
+                },
+                "start": Object {
+                  "character": 31,
+                  "line": 8,
+                },
+              },
+              "type": "DirectiveModifier",
+            },
+          ],
+          "name": "on",
+          "range": Object {
+            "end": Object {
+              "character": 54,
+              "line": 8,
+            },
+            "start": Object {
+              "character": 10,
+              "line": 8,
+            },
+          },
+          "type": "Directive",
+        },
+      ],
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 10,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 9,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 10,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 9,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "argument": Object {
+                "argument": undefined,
+                "isExpression": false,
+                "range": Object {
+                  "end": Object {
+                    "character": 26,
+                    "line": 10,
+                  },
+                  "start": Object {
+                    "character": 19,
+                    "line": 10,
+                  },
+                },
+                "type": "DirectiveArgument",
+                "value": "default",
+              },
+              "expression": undefined,
+              "isShorthand": true,
+              "modifiers": Array [],
+              "name": "slot",
+              "range": Object {
+                "end": Object {
+                  "character": 26,
+                  "line": 10,
+                },
+                "start": Object {
+                  "character": 18,
+                  "line": 10,
+                },
+              },
+              "type": "Directive",
+            },
+          ],
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 10,
+                      "line": 12,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 11,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+          ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 10,
+                  "line": 12,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 11,
+                },
+              },
+              "type": "Text",
+            },
+            Object {
+              "attributes": Array [],
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "range": Object {
+                        "end": Object {
+                          "character": 23,
+                          "line": 12,
+                        },
+                        "start": Object {
+                          "character": 16,
+                          "line": 12,
+                        },
+                      },
+                      "type": "Literal",
+                      "value": "Loading",
+                    },
+                  ],
+                  "range": Object {
+                    "end": Object {
+                      "character": 23,
+                      "line": 12,
+                    },
+                    "start": Object {
+                      "character": 16,
+                      "line": 12,
+                    },
+                  },
+                  "type": "Text",
+                },
+              ],
+              "isSelfClosing": false,
+              "namespace": "html",
+              "range": Object {
+                "end": Object {
+                  "character": 0,
+                  "line": 13,
+                },
+                "start": Object {
+                  "character": 10,
+                  "line": 12,
+                },
+              },
+              "tagName": "span",
+              "tagType": "element",
+              "type": "Element",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 8,
+                      "line": 14,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 13,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+        ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 14,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 13,
+                },
+              },
+              "type": "Text",
+            },
+          ],
+          "isSelfClosing": false,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 15,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 10,
+            },
+          },
+          "tagName": "template",
+          "tagType": "template",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 16,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 15,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 16,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 15,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "argument": Object {
+                "argument": undefined,
+                "isExpression": false,
+                "range": Object {
+                  "end": Object {
+                    "character": 23,
+                    "line": 16,
+                  },
+                  "start": Object {
+                    "character": 19,
+                    "line": 16,
+                  },
+                },
+                "type": "DirectiveArgument",
+                "value": "done",
+              },
+              "expression": Object {
+                "quotes": "\\"",
+                "range": Object {
+                  "end": Object {
+                    "character": 47,
+                    "line": 16,
+                  },
+                  "start": Object {
+                    "character": 24,
+                    "line": 16,
+                  },
+                },
+                "type": "DirectiveExpression",
+                "value": "{ data, ...response }",
+              },
+              "isShorthand": true,
+              "modifiers": Array [],
+              "name": "slot",
+              "params": Array [
+                Node {
+                  "end": 31,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 31,
+                      "line": 1,
+                    },
+                    "start": Position {
+                      "column": 10,
+                      "line": 1,
+                    },
+                  },
+                  "properties": Array [
+                    Node {
+                      "computed": false,
+                      "end": 16,
+                      "extra": Object {
+                        "shorthand": true,
+                      },
+                      "key": Node {
+                        "end": 16,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 16,
+                            "line": 1,
+                          },
+                          "identifierName": "data",
+                          "start": Position {
+                            "column": 12,
+                            "line": 1,
+                          },
+                        },
+                        "name": "data",
+                        "start": 12,
+                        "type": "Identifier",
+                      },
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 16,
+                          "line": 1,
+                        },
+                        "start": Position {
+                          "column": 12,
+                          "line": 1,
+                        },
+                      },
+                      "method": false,
+                      "shorthand": true,
+                      "start": 12,
+                      "type": "ObjectProperty",
+                      "value": Node {
+                        "end": 16,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 16,
+                            "line": 1,
+                          },
+                          "identifierName": "data",
+                          "start": Position {
+                            "column": 12,
+                            "line": 1,
+                          },
+                        },
+                        "name": "data",
+                        "start": 12,
+                        "type": "Identifier",
+                      },
+                    },
+                    Node {
+                      "argument": Node {
+                        "end": 29,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 29,
+                            "line": 1,
+                          },
+                          "identifierName": "response",
+                          "start": Position {
+                            "column": 21,
+                            "line": 1,
+                          },
+                        },
+                        "name": "response",
+                        "start": 21,
+                        "type": "Identifier",
+                      },
+                      "end": 29,
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 29,
+                          "line": 1,
+                        },
+                        "start": Position {
+                          "column": 18,
+                          "line": 1,
+                        },
+                      },
+                      "start": 18,
+                      "type": "RestElement",
+                    },
+                  ],
+                  "start": 10,
+                  "type": "ObjectPattern",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 47,
+                  "line": 16,
+                },
+                "start": Object {
+                  "character": 18,
+                  "line": 16,
+                },
+              },
+              "scopeIdentifiers": Array [
+                "data",
+                "response",
+              ],
+              "type": "Directive",
+            },
+          ],
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 10,
+                      "line": 18,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 17,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+          ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 10,
+                  "line": 18,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 17,
+                },
+              },
+              "type": "Text",
+            },
+            Object {
+              "attributes": Array [
+                Object {
+                  "argument": undefined,
+                  "expression": Object {
+                    "quotes": "\\"",
+                    "range": Object {
+                      "end": Object {
+                        "character": 65,
+                        "line": 18,
+                      },
+                      "start": Object {
+                        "character": 22,
+                        "line": 18,
+                      },
+                    },
+                    "type": "DirectiveExpression",
+                    "value": "({ name, value, ...item }, index) in data",
+                  },
+                  "isShorthand": false,
+                  "left": Array [
+                    Node {
+                      "end": 25,
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 25,
+                          "line": 1,
+                        },
+                        "start": Position {
+                          "column": 1,
+                          "line": 1,
+                        },
+                      },
+                      "properties": Array [
+                        Node {
+                          "computed": false,
+                          "end": 7,
+                          "extra": Object {
+                            "shorthand": true,
+                          },
+                          "key": Node {
+                            "end": 7,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 7,
+                                "line": 1,
+                              },
+                              "identifierName": "name",
+                              "start": Position {
+                                "column": 3,
+                                "line": 1,
+                              },
+                            },
+                            "name": "name",
+                            "start": 3,
+                            "type": "Identifier",
+                          },
+                          "loc": SourceLocation {
+                            "end": Position {
+                              "column": 7,
+                              "line": 1,
+                            },
+                            "start": Position {
+                              "column": 3,
+                              "line": 1,
+                            },
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "start": 3,
+                          "type": "ObjectProperty",
+                          "value": Node {
+                            "end": 7,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 7,
+                                "line": 1,
+                              },
+                              "identifierName": "name",
+                              "start": Position {
+                                "column": 3,
+                                "line": 1,
+                              },
+                            },
+                            "name": "name",
+                            "start": 3,
+                            "type": "Identifier",
+                          },
+                        },
+                        Node {
+                          "computed": false,
+                          "end": 14,
+                          "extra": Object {
+                            "shorthand": true,
+                          },
+                          "key": Node {
+                            "end": 14,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 14,
+                                "line": 1,
+                              },
+                              "identifierName": "value",
+                              "start": Position {
+                                "column": 9,
+                                "line": 1,
+                              },
+                            },
+                            "name": "value",
+                            "start": 9,
+                            "type": "Identifier",
+                          },
+                          "loc": SourceLocation {
+                            "end": Position {
+                              "column": 14,
+                              "line": 1,
+                            },
+                            "start": Position {
+                              "column": 9,
+                              "line": 1,
+                            },
+                          },
+                          "method": false,
+                          "shorthand": true,
+                          "start": 9,
+                          "type": "ObjectProperty",
+                          "value": Node {
+                            "end": 14,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 14,
+                                "line": 1,
+                              },
+                              "identifierName": "value",
+                              "start": Position {
+                                "column": 9,
+                                "line": 1,
+                              },
+                            },
+                            "name": "value",
+                            "start": 9,
+                            "type": "Identifier",
+                          },
+                        },
+                        Node {
+                          "argument": Node {
+                            "end": 23,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 23,
+                                "line": 1,
+                              },
+                              "identifierName": "item",
+                              "start": Position {
+                                "column": 19,
+                                "line": 1,
+                              },
+                            },
+                            "name": "item",
+                            "start": 19,
+                            "type": "Identifier",
+                          },
+                          "end": 23,
+                          "loc": SourceLocation {
+                            "end": Position {
+                              "column": 23,
+                              "line": 1,
+                            },
+                            "start": Position {
+                              "column": 16,
+                              "line": 1,
+                            },
+                          },
+                          "start": 16,
+                          "type": "RestElement",
+                        },
+                      ],
+                      "start": 1,
+                      "type": "ObjectPattern",
+                    },
+                    Node {
+                      "end": 32,
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 32,
+                          "line": 1,
+                        },
+                        "identifierName": "index",
+                        "start": Position {
+                          "column": 27,
+                          "line": 1,
+                        },
+                      },
+                      "name": "index",
+                      "start": 27,
+                      "type": "Identifier",
+                    },
+                  ],
+                  "modifiers": Array [],
+                  "name": "for",
+                  "range": Object {
+                    "end": Object {
+                      "character": 65,
+                      "line": 18,
+                    },
+                    "start": Object {
+                      "character": 16,
+                      "line": 18,
+                    },
+                  },
+                  "right": Node {
+                    "comments": Array [],
+                    "end": 4,
+                    "loc": SourceLocation {
+                      "end": Position {
+                        "column": 4,
+                        "line": 1,
+                      },
+                      "identifierName": "data",
+                      "start": Position {
+                        "column": 0,
+                        "line": 1,
+                      },
+                    },
+                    "name": "data",
+                    "start": 0,
+                    "type": "Identifier",
+                  },
+                  "scopeIdentifiers": Array [
+                    "name",
+                    "value",
+                    "item",
+                    "index",
+                  ],
+                  "type": "Directive",
+                },
+              ],
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "expression": Node {
+                        "comments": Array [],
+                        "end": 5,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 5,
+                            "line": 1,
+                          },
+                          "identifierName": "name",
+                          "start": Position {
+                            "column": 1,
+                            "line": 1,
+                          },
+                        },
+                        "name": "name",
+                        "start": 1,
+                        "type": "Identifier",
+                      },
+                      "range": Object {
+                        "end": Object {
+                          "character": 76,
+                          "line": 18,
+                        },
+                        "start": Object {
+                          "character": 66,
+                          "line": 18,
+                        },
+                      },
+                      "type": "Interpolation",
+                      "value": " name ",
+                    },
+                    Object {
+                      "range": Object {
+                        "end": Object {
+                          "character": 77,
+                          "line": 18,
+                        },
+                        "start": Object {
+                          "character": 76,
+                          "line": 18,
+                        },
+                      },
+                      "type": "Literal",
+                      "value": " ",
+                    },
+                    Object {
+                      "expression": Node {
+                        "comments": Array [],
+                        "end": 6,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 6,
+                            "line": 1,
+                          },
+                          "identifierName": "value",
+                          "start": Position {
+                            "column": 1,
+                            "line": 1,
+                          },
+                        },
+                        "name": "value",
+                        "start": 1,
+                        "type": "Identifier",
+                      },
+                      "range": Object {
+                        "end": Object {
+                          "character": 88,
+                          "line": 18,
+                        },
+                        "start": Object {
+                          "character": 77,
+                          "line": 18,
+                        },
+                      },
+                      "type": "Interpolation",
+                      "value": " value ",
+                    },
+                  ],
+                  "range": Object {
+                    "end": Object {
+                      "character": 88,
+                      "line": 18,
+                    },
+                    "start": Object {
+                      "character": 66,
+                      "line": 18,
+                    },
+                  },
+                  "type": "Text",
+                },
+              ],
+              "isSelfClosing": false,
+              "namespace": "html",
+              "range": Object {
+                "end": Object {
+                  "character": 0,
+                  "line": 19,
+                },
+                "start": Object {
+                  "character": 10,
+                  "line": 18,
+                },
+              },
+              "tagName": "span",
+              "tagType": "element",
+              "type": "Element",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 8,
+                      "line": 20,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 19,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+        ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 20,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 19,
+                },
+              },
+              "type": "Text",
+            },
+          ],
+          "isSelfClosing": false,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 21,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 16,
+            },
+          },
+          "tagName": "template",
+          "tagType": "template",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 22,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 21,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 22,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 21,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [
+            Object {
+              "argument": Object {
+                "argument": undefined,
+                "isExpression": false,
+                "range": Object {
+                  "end": Object {
+                    "character": 29,
+                    "line": 22,
+                  },
+                  "start": Object {
+                    "character": 25,
+                    "line": 22,
+                  },
+                },
+                "type": "DirectiveArgument",
+                "value": "done",
+              },
+              "expression": Object {
+                "quotes": "\\"",
+                "range": Object {
+                  "end": Object {
+                    "character": 71,
+                    "line": 22,
+                  },
+                  "start": Object {
+                    "character": 30,
+                    "line": 22,
+                  },
+                },
+                "type": "DirectiveExpression",
+                "value": "{ status: { message, error, ...args } }",
+              },
+              "isShorthand": false,
+              "modifiers": Array [],
+              "name": "slot",
+              "params": Array [
+                Node {
+                  "end": 49,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 49,
+                      "line": 1,
+                    },
+                    "start": Position {
+                      "column": 10,
+                      "line": 1,
+                    },
+                  },
+                  "properties": Array [
+                    Node {
+                      "computed": false,
+                      "end": 47,
+                      "key": Node {
+                        "end": 18,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 18,
+                            "line": 1,
+                          },
+                          "identifierName": "status",
+                          "start": Position {
+                            "column": 12,
+                            "line": 1,
+                          },
+                        },
+                        "name": "status",
+                        "start": 12,
+                        "type": "Identifier",
+                      },
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 47,
+                          "line": 1,
+                        },
+                        "start": Position {
+                          "column": 12,
+                          "line": 1,
+                        },
+                      },
+                      "method": false,
+                      "shorthand": false,
+                      "start": 12,
+                      "type": "ObjectProperty",
+                      "value": Node {
+                        "end": 47,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 47,
+                            "line": 1,
+                          },
+                          "start": Position {
+                            "column": 20,
+                            "line": 1,
+                          },
+                        },
+                        "properties": Array [
+                          Node {
+                            "computed": false,
+                            "end": 29,
+                            "extra": Object {
+                              "shorthand": true,
+                            },
+                            "key": Node {
+                              "end": 29,
+                              "loc": SourceLocation {
+                                "end": Position {
+                                  "column": 29,
+                                  "line": 1,
+                                },
+                                "identifierName": "message",
+                                "start": Position {
+                                  "column": 22,
+                                  "line": 1,
+                                },
+                              },
+                              "name": "message",
+                              "start": 22,
+                              "type": "Identifier",
+                            },
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 29,
+                                "line": 1,
+                              },
+                              "start": Position {
+                                "column": 22,
+                                "line": 1,
+                              },
+                            },
+                            "method": false,
+                            "shorthand": true,
+                            "start": 22,
+                            "type": "ObjectProperty",
+                            "value": Node {
+                              "end": 29,
+                              "loc": SourceLocation {
+                                "end": Position {
+                                  "column": 29,
+                                  "line": 1,
+                                },
+                                "identifierName": "message",
+                                "start": Position {
+                                  "column": 22,
+                                  "line": 1,
+                                },
+                              },
+                              "name": "message",
+                              "start": 22,
+                              "type": "Identifier",
+                            },
+                          },
+                          Node {
+                            "computed": false,
+                            "end": 36,
+                            "extra": Object {
+                              "shorthand": true,
+                            },
+                            "key": Node {
+                              "end": 36,
+                              "loc": SourceLocation {
+                                "end": Position {
+                                  "column": 36,
+                                  "line": 1,
+                                },
+                                "identifierName": "error",
+                                "start": Position {
+                                  "column": 31,
+                                  "line": 1,
+                                },
+                              },
+                              "name": "error",
+                              "start": 31,
+                              "type": "Identifier",
+                            },
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 36,
+                                "line": 1,
+                              },
+                              "start": Position {
+                                "column": 31,
+                                "line": 1,
+                              },
+                            },
+                            "method": false,
+                            "shorthand": true,
+                            "start": 31,
+                            "type": "ObjectProperty",
+                            "value": Node {
+                              "end": 36,
+                              "loc": SourceLocation {
+                                "end": Position {
+                                  "column": 36,
+                                  "line": 1,
+                                },
+                                "identifierName": "error",
+                                "start": Position {
+                                  "column": 31,
+                                  "line": 1,
+                                },
+                              },
+                              "name": "error",
+                              "start": 31,
+                              "type": "Identifier",
+                            },
+                          },
+                          Node {
+                            "argument": Node {
+                              "end": 45,
+                              "loc": SourceLocation {
+                                "end": Position {
+                                  "column": 45,
+                                  "line": 1,
+                                },
+                                "identifierName": "args",
+                                "start": Position {
+                                  "column": 41,
+                                  "line": 1,
+                                },
+                              },
+                              "name": "args",
+                              "start": 41,
+                              "type": "Identifier",
+                            },
+                            "end": 45,
+                            "loc": SourceLocation {
+                              "end": Position {
+                                "column": 45,
+                                "line": 1,
+                              },
+                              "start": Position {
+                                "column": 38,
+                                "line": 1,
+                              },
+                            },
+                            "start": 38,
+                            "type": "RestElement",
+                          },
+                        ],
+                        "start": 20,
+                        "type": "ObjectPattern",
+                      },
+                    },
+                  ],
+                  "start": 10,
+                  "type": "ObjectPattern",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 71,
+                  "line": 22,
+                },
+                "start": Object {
+                  "character": 18,
+                  "line": 22,
+                },
+              },
+              "scopeIdentifiers": Array [
+                "message",
+                "error",
+                "args",
+              ],
+              "type": "Directive",
+            },
+          ],
+          "children": Array [
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 10,
+                      "line": 24,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 23,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+          ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 10,
+                  "line": 24,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 23,
+                },
+              },
+              "type": "Text",
+            },
+            Object {
+              "attributes": Array [],
+              "children": Array [
+                Object {
+                  "children": Array [
+                    Object {
+                      "expression": Node {
+                        "comments": Array [],
+                        "end": 8,
+                        "loc": SourceLocation {
+                          "end": Position {
+                            "column": 8,
+                            "line": 1,
+                          },
+                          "identifierName": "message",
+                          "start": Position {
+                            "column": 1,
+                            "line": 1,
+                          },
+                        },
+                        "name": "message",
+                        "start": 1,
+                        "type": "Identifier",
+                      },
+                      "range": Object {
+                        "end": Object {
+                          "character": 29,
+                          "line": 24,
+                        },
+                        "start": Object {
+                          "character": 16,
+                          "line": 24,
+                        },
+                      },
+                      "type": "Interpolation",
+                      "value": " message ",
+                    },
+                  ],
+                  "range": Object {
+                    "end": Object {
+                      "character": 29,
+                      "line": 24,
+                    },
+                    "start": Object {
+                      "character": 16,
+                      "line": 24,
+                    },
+                  },
+                  "type": "Text",
+                },
+              ],
+              "isSelfClosing": false,
+              "namespace": "html",
+              "range": Object {
+                "end": Object {
+                  "character": 0,
+                  "line": 25,
+                },
+                "start": Object {
+                  "character": 10,
+                  "line": 24,
+                },
+              },
+              "tagName": "span",
+              "tagType": "element",
+              "type": "Element",
+            },
+            Object {
+              "children": Array [
+                Object {
+                  "range": Object {
+                    "end": Object {
+                      "character": 8,
+                      "line": 26,
+                    },
+                    "start": Object {
+                      "character": 0,
+                      "line": 25,
+                    },
+                  },
+                  "type": "Literal",
+                  "value": "
+        ",
+                },
+              ],
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 26,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 25,
+                },
+              },
+              "type": "Text",
+            },
+          ],
+          "isSelfClosing": false,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 27,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 22,
+            },
+          },
+          "tagName": "template",
+          "tagType": "template",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 6,
+                  "line": 28,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 27,
+                },
+              },
+              "type": "Literal",
+              "value": "
+      ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 6,
+              "line": 28,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 27,
+            },
+          },
+          "type": "Text",
+        },
+      ],
+      "isSelfClosing": false,
+      "namespace": "html",
+      "range": Object {
+        "end": Object {
+          "character": 14,
+          "line": 28,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "tagName": "fetch",
+      "tagType": "element",
+      "type": "Element",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 14,
+      "line": 28,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Root",
+}
+`;
+
+exports[`parse should parse element (no children) 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "attributes": Array [
+        Object {
+          "name": "class",
+          "quotes": undefined,
+          "range": Object {
+            "end": Object {
+              "character": 14,
+              "line": 0,
+            },
+            "start": Object {
+              "character": 5,
+              "line": 0,
+            },
+          },
+          "type": "Attribute",
+          "value": "foo",
+        },
+        Object {
+          "name": "style",
+          "quotes": "\\"",
+          "range": Object {
+            "end": Object {
+              "character": 34,
+              "line": 0,
+            },
+            "start": Object {
+              "character": 15,
+              "line": 0,
+            },
+          },
+          "type": "Attribute",
+          "value": "color: red;",
+        },
+        Object {
+          "name": "data-text",
+          "quotes": "\\"",
+          "range": Object {
+            "end": Object {
+              "character": 50,
+              "line": 0,
+            },
+            "start": Object {
+              "character": 35,
+              "line": 0,
+            },
+          },
+          "type": "Attribute",
+          "value": "\\">",
+        },
+        Object {
+          "name": "required",
+          "quotes": undefined,
+          "range": Object {
+            "end": Object {
+              "character": 59,
+              "line": 0,
+            },
+            "start": Object {
+              "character": 51,
+              "line": 0,
+            },
+          },
+          "type": "Attribute",
+          "value": undefined,
+        },
+        Object {
+          "name": "data-empty",
+          "quotes": "\\"",
+          "range": Object {
+            "end": Object {
+              "character": 73,
+              "line": 0,
+            },
+            "start": Object {
+              "character": 60,
+              "line": 0,
+            },
+          },
+          "type": "Attribute",
+          "value": "",
+        },
+      ],
+      "children": Array [],
+      "isSelfClosing": false,
+      "namespace": "html",
+      "range": Object {
+        "end": Object {
+          "character": 80,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "tagName": "div",
+      "tagType": "element",
+      "type": "Element",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 80,
+      "line": 0,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Root",
+}
+`;
+
+exports[`parse should parse element (no children, no attributes) 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "isSelfClosing": false,
+      "namespace": "html",
+      "range": Object {
+        "end": Object {
+          "character": 11,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "tagName": "div",
+      "tagType": "element",
+      "type": "Element",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 11,
+      "line": 0,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Root",
+}
+`;
+
+exports[`parse should parse elements 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "range": Object {
+            "end": Object {
+              "character": 6,
+              "line": 2,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 0,
+            },
+          },
+          "type": "Literal",
+          "value": "
+      ",
+        },
+      ],
+      "range": Object {
+        "end": Object {
+          "character": 6,
+          "line": 2,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "type": "Text",
+    },
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 4,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 3,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 4,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 3,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "isSelfClosing": true,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 5,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 4,
+            },
+          },
+          "tagName": "div",
+          "tagType": "element",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 6,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 5,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 6,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 5,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "isSelfClosing": true,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 7,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 6,
+            },
+          },
+          "tagName": "span",
+          "tagType": "element",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 6,
+                  "line": 8,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 7,
+                },
+              },
+              "type": "Literal",
+              "value": "
+      ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 6,
+              "line": 8,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 7,
+            },
+          },
+          "type": "Text",
+        },
+      ],
+      "isSelfClosing": false,
+      "namespace": "html",
+      "range": Object {
+        "end": Object {
+          "character": 0,
+          "line": 9,
+        },
+        "start": Object {
+          "character": 6,
+          "line": 2,
+        },
+      },
+      "tagName": "my-component",
+      "tagType": "component",
+      "type": "Element",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "range": Object {
+            "end": Object {
+              "character": 6,
+              "line": 10,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 9,
+            },
+          },
+          "type": "Literal",
+          "value": "
+      ",
+        },
+      ],
+      "range": Object {
+        "end": Object {
+          "character": 6,
+          "line": 10,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 9,
+        },
+      },
+      "type": "Text",
+    },
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 12,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 11,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 12,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 11,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "isSelfClosing": true,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 13,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 12,
+            },
+          },
+          "tagName": "img",
+          "tagType": "element",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 14,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 13,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 14,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 13,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "isSelfClosing": true,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 15,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 14,
+            },
+          },
+          "tagName": "img",
+          "tagType": "element",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 8,
+                  "line": 16,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 15,
+                },
+              },
+              "type": "Literal",
+              "value": "
+        ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 8,
+              "line": 16,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 15,
+            },
+          },
+          "type": "Text",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "isSelfClosing": true,
+          "namespace": "html",
+          "range": Object {
+            "end": Object {
+              "character": 0,
+              "line": 17,
+            },
+            "start": Object {
+              "character": 8,
+              "line": 16,
+            },
+          },
+          "tagName": "hr",
+          "tagType": "element",
+          "type": "Element",
+        },
+        Object {
+          "children": Array [
+            Object {
+              "range": Object {
+                "end": Object {
+                  "character": 6,
+                  "line": 18,
+                },
+                "start": Object {
+                  "character": 0,
+                  "line": 17,
+                },
+              },
+              "type": "Literal",
+              "value": "
+      ",
+            },
+          ],
+          "range": Object {
+            "end": Object {
+              "character": 6,
+              "line": 18,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 17,
+            },
+          },
+          "type": "Text",
+        },
+      ],
+      "isSelfClosing": false,
+      "namespace": "html",
+      "range": Object {
+        "end": Object {
+          "character": 0,
+          "line": 19,
+        },
+        "start": Object {
+          "character": 6,
+          "line": 10,
+        },
+      },
+      "tagName": "MyComponent",
+      "tagType": "component",
+      "type": "Element",
+    },
+    Object {
+      "children": Array [
+        Object {
+          "range": Object {
+            "end": Object {
+              "character": 4,
+              "line": 20,
+            },
+            "start": Object {
+              "character": 0,
+              "line": 19,
+            },
+          },
+          "type": "Literal",
+          "value": "
+    ",
+        },
+      ],
+      "range": Object {
+        "end": Object {
+          "character": 4,
+          "line": 20,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 19,
+        },
+      },
+      "type": "Text",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 4,
+      "line": 20,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 1,
+    },
+  },
+  "type": "Root",
+}
+`;
+
+exports[`parseText should parse multi line plain text 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 4,
+          "line": 6,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "type": "Literal",
+      "value": "multi
+line
+plain
+text",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 4,
+      "line": 6,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Text",
+}
+`;
+
+exports[`parseText should parse multi line plain text with character references 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 5,
+          "line": 2,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "type": "Literal",
+      "value": "multi
+line ",
+    },
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 0,
+          "line": 3,
+        },
+        "start": Object {
+          "character": 5,
+          "line": 2,
+        },
+      },
+      "referenceType": "named",
+      "type": "CharacterReferenceLiteral",
+      "value": "&",
+    },
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 4,
+          "line": 6,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 3,
+        },
+      },
+      "type": "Literal",
+      "value": "
+plain
+text",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 4,
+      "line": 6,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Text",
+}
+`;
+
+exports[`parseText should parse single line plain text 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 22,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "type": "Literal",
+      "value": "single line plain text",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 22,
+      "line": 0,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Text",
+}
+`;
+
+exports[`parseText should parse single line text with interpolation 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 17,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 0,
+          "line": 0,
+        },
+      },
+      "type": "Literal",
+      "value": "single line text ",
+    },
+    Object {
+      "expression": Node {
+        "comments": Array [],
+        "end": 7,
+        "extra": Object {
+          "raw": "'with'",
+          "rawValue": "with",
+        },
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 7,
+            "line": 1,
+          },
+          "start": Position {
+            "column": 1,
+            "line": 1,
+          },
+        },
+        "start": 1,
+        "type": "StringLiteral",
+        "value": "with",
+      },
+      "range": Object {
+        "end": Object {
+          "character": 29,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 17,
+          "line": 0,
+        },
+      },
+      "type": "Interpolation",
+      "value": " 'with' ",
+    },
+    Object {
+      "range": Object {
+        "end": Object {
+          "character": 43,
+          "line": 0,
+        },
+        "start": Object {
+          "character": 29,
+          "line": 0,
+        },
+      },
+      "type": "Literal",
+      "value": " interpolation",
+    },
+  ],
+  "range": Object {
+    "end": Object {
+      "character": 43,
+      "line": 0,
+    },
+    "start": Object {
+      "character": 0,
+      "line": 0,
+    },
+  },
+  "type": "Text",
+}
+`;

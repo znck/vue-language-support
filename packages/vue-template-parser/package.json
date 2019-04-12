@@ -1,0 +1,15 @@
+{
+  "name": "@znck/vue-template-parser",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/parser.js",
+  "tsMain": "src/index.ts",
+  "scripts": {},
+  "keywords": [],
+  "author": "Rahul Kadyan <rahulkdn@gmail.com> (https://znck.me)",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/parser": "^7.4.3",
+    "@babel/types": "^7.4.0"
+  }
+}
