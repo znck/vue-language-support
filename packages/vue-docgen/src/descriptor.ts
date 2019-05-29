@@ -1,5 +1,6 @@
 import { SourceLocation } from '@babel/types'
 import { SFCDescriptor } from 'vue-template-compiler'
+import { Tag } from 'doctrine'
 
 export interface ComponentRegistrationDescriptor {
   /**
@@ -58,14 +59,14 @@ export interface PropDescriptor {
   /**
    * Default Value.
    */
-  defaultValue?: {
+  default?: {
     value: string
     factory?: boolean
   }
   /**
    * JS Doc Tags
    */
-  tags: Record<string, any> // TODO: Use tag names.
+  tags: Tag[]
   /**
    * Source range for declaration.
    */
@@ -92,15 +93,15 @@ export interface ComponentDescriptor {
   /**
    * JS Doc tags.
    */
-  tags: Record<string, string>
+  tags: Record<string, string> // TODO: Use tag descriptor.
   /**
    * List of props declared.
    */
-  props: Record<string, PropDescriptor>
+  props: PropDescriptor[]
   /**
    * List of components registered.
    */
-  components: Record<string, ComponentRegistrationDescriptor>
+  components: ComponentRegistrationDescriptor[]
   /**
    * SFC Descriptor
    */

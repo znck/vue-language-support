@@ -94,8 +94,8 @@ export const TagCompletionItemResolver = resolver<TagCompletionItemData>(
           .map(
             prop =>
               `@prop {${prop.type ? prop.type.name : 'any'}} ${
-                prop.defaultValue
-                  ? `[${prop.name}=${prop.defaultValue.value}]`
+                prop.default
+                  ? `[${prop.name}=${prop.default.value}]`
                   : prop.required
                   ? prop.name
                   : `[${prop.name}]`
@@ -116,8 +116,8 @@ export const TagCompletionItemResolver = resolver<TagCompletionItemData>(
           .map(
             prop =>
               `@prop {${prop.type ? prop.type.name : 'any'}} ${
-                prop.defaultValue
-                  ? `[${prop.name}=${prop.defaultValue.value}]`
+                prop.default
+                  ? `[${prop.name}=${prop.default.value}]`
                   : prop.required
                   ? prop.name
                   : `[${prop.name}]`

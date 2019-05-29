@@ -11,17 +11,26 @@
   "author": "Rahul Kadyan <rahulkdn@gmail.com> (https://znck.me)",
   "license": "MIT",
   "dependencies": {
-    "@babel/parser": "^7.4.2",
-    "@babel/traverse": "^7.4.0",
-    "@babel/types": "^7.4.0",
+    "@babel/parser": "^7.4.5",
+    "@babel/traverse": "^7.4.5",
+    "@babel/types": "^7.4.4",
     "@vue/component-compiler-utils": "^2.6.0",
+    "doctrine": "^3.0.0",
     "lodash": "^4.17.11",
     "vue-template-compiler": ">=2.6"
   },
   "devDependencies": {
     "@types/babel__traverse": "^7.0.6",
+    "@types/doctrine": "^0.0.3",
+    "@types/jest": "^24.0.13",
     "@types/lodash": "^4.14.123",
     "@types/node": "^11.12.2",
-    "typescript": "^3.4.1"
+    "jest": "^24.8.0",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.4.1",
+    "vue": "^2.6.10"
+  },
+  "scripts": {
+    "test": "jest"
   }
 }

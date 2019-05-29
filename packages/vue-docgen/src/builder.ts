@@ -24,8 +24,8 @@ export class DescriptorBuilder {
       pascalName: pascalCase(name),
       fileName: options.fileName,
       tags: {},
-      props: {},
-      components: {},
+      props: [],
+      components: [],
     }
   }
   addProp({ name, ...others }: Partial<PropDescriptor>): PropDescriptor {
@@ -35,11 +35,12 @@ export class DescriptorBuilder {
     const prop = {
       name,
       required: false,
-      tags: {},
+      tags: [],
       ...others,
       kebabName: kebabCase(name),
     }
-    this.component.props[name] = prop
+    this.component.props.push(prop)
+
     return prop
   }
   addComponentRegistration(
@@ -53,7 +54,7 @@ export class DescriptorBuilder {
     if (options.fileName) {
       component.absolutePath = this.options.resolve(options.fileName)
     }
-    this.component.components[component.pascalName] = component
+    this.component.components.push(component)
     return component
   }
 }

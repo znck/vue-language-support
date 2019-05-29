@@ -1,4 +1,4 @@
-import { parseExpression } from './parse/javascript'
+import { parseExpression } from './parse/typescript'
 import { parse as parseSFC } from './parser'
 
 export * from './descriptor'

@@ -1,5 +1,6 @@
 import * as T from '@babel/types'
 import { NodePath } from '@babel/traverse'
+import { parse as parseDoc, type } from 'doctrine'
 import { ParserContext } from '../../parser'
 import { DescriptorBuilder } from '../../builder'
 import {
@@ -37,7 +38,6 @@ export default function parseProps(
   else if (propsPath.isObjectExpression()) {
     propsPath.get('properties').forEach(propertyPath => {
       if (propertyPath.isObjectProperty()) {
-        // TODO: Parse leading comments using JSDoc parser.
         const currentPropPath = propertyPath.get('value')
         const name = getPropertyKey(propertyPath)
 
@@ -51,7 +51,24 @@ export default function parseProps(
         } else if (currentPropPath.isObjectExpression()) {
           prop.type = getPropType(currentPropPath)
           prop.required = getPropRequired(currentPropPath)
-          prop.defaultValue = getPropDefault(currentPropPath)
+          prop.default = getPropDefault(currentPropPath)
+        }
+
+        const doc = parseDocComment(propertyPath)
+
+        if (doc) {
+          prop.description = doc.description
+          prop.tags = doc.tags
+          
+          doc.tags.every(tag => {
+            if (tag.title === 'type') {
+              if (tag.type) prop.type = { name: type.stringify(tag.type) }
+
+              return false // stop iteration.
+            }
+
+            return true
+          })
         }
       }
     })
@@ -66,6 +83,20 @@ const NORMALIZED_TYPE_NAMES = {
   Object: '{ [key: string]: any }',
   String: 'string',
   Symbol: 'symbol',
+}
+
+function parseDocComment(nodePath: NodePath) {
+  const { node } = nodePath
+
+  if (!node.leadingComments || !node.leadingComments.length) return
+
+  const docComments = node.leadingComments.filter(comment => comment.value.trim().startsWith('*'))
+
+  const comment = docComments[docComments.length - 1]
+
+  if (!comment) return
+
+  return parseDoc(`/*${comment.value}\n*/`, { unwrap: true, recoverable: true, sloppy: true })    
 }
 
 function parsePropType(
@@ -123,7 +154,7 @@ function getPropDefault(propPath: NodePath<T.ObjectExpression>) {
     const defaultValuePath = defaultPath.get('value')
 
     if (defaultValuePath.isArrowFunctionExpression()) {
-      const code = defaultValuePath.get('body').getSource()
+      const code = defaultValuePath.get('body').toString()
 
       return {
         value: (defaultValuePath.node.body as any).extra.parenthesized
@@ -131,9 +162,9 @@ function getPropDefault(propPath: NodePath<T.ObjectExpression>) {
           : code,
         factory: true,
       }
-    } else {
+    } else if (defaultValuePath) {
       return {
-        value: defaultValuePath.getSource(),
+        value: defaultValuePath.toString(),
       }
     }
   }

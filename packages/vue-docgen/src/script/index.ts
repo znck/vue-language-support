@@ -52,6 +52,8 @@ export default async function script(
       }
     })
   )
+
+  // Enhance with type information.
 }
 
 function findComponentOptions(
@@ -67,9 +69,12 @@ function findComponentOptions(
     const fnPath = declarationPath.get('callee')
 
     if (
-      fnPath.isMemberExpression() &&
-      T.isIdentifier(fnPath.node.object, { name: 'Vue' }) &&
-      T.isIdentifier(fnPath.node.property, { name: 'Vue' })
+      fnPath.isIdentifier({ name: 'createComponent' }) ||
+      (
+        fnPath.isMemberExpression() &&
+        T.isIdentifier(fnPath.node.object, { name: 'Vue' }) &&
+        T.isIdentifier(fnPath.node.property, { name: 'extend' })
+      )
     ) {
       const optionsPath = declarationPath.get('arguments')[0]
 
